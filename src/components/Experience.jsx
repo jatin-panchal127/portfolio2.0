@@ -20,25 +20,15 @@ const ExperienceCard = ({ experience }) => {
       icon={
         <div
           style={{
-            display: "inline-block",
+            display: "flex",
             overflow: "hidden",
-            height: "50px",
-            width: "50px",
-            borderRadius: "50%",
-            position: "absolute",
-            top: 5,
-            left: 5,
+            padding: "6px",
           }}
         >
           <img
             src={experience.icon}
             alt={experience.company_name}
-            style={{
-              display: "block",
-              width: "100%",
-              height: "auto",
-              position: "relative",
-            }}
+            style={{ borderRadius: "50%" }}
           />
         </div>
       }
